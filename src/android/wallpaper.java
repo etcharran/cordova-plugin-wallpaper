@@ -57,7 +57,7 @@ public class wallpaper extends CordovaPlugin
 				bitmap = BitmapFactory.decodeStream(instr);
 			}
 			WallpaperManager myWallpaperManager = WallpaperManager.getInstance(context);
-			myWallpaperManager.setBitmap(bitmap);
+			myWallpaperManager.setBitmap(bitmap,null,false,2);
 		}
 		catch (IOException e)
 		{
